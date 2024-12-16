@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Calculator</title>
+  </head>
+  <body>
+    <div class="calculator-container">
+      <h1>String Calculator</h1>
+
+      <div class="input-group">
+        <textarea
+          id="numberInput"
+          placeholder="Enter numbers (e.g., '1,2,3' or '//;\n1;2;3')"
+          rows="4"
+        ></textarea>
+        <button id="calculateBtn" type="button">Calculate Sum</button>
+      </div>
+
+      <div id="result" class="result" style="display: none"></div>
+
+      <div class="examples">
+        <h2>Usage Examples:</h2>
+        <ul>
+          <li>Basic numbers: "1,5" (Result: 6)</li>
+          <li>Multiple numbers: "1,2,3" (Result: 6)</li>
+          <li>With newlines: "1\n2,3" (Result: 6)</li>
+          <li>Custom delimiter: "//;\n1;2" (Result: 3)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Webpack will inject the bundled script -->
+  </body>
+</html>
